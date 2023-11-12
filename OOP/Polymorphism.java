@@ -2,8 +2,8 @@ package OOP;
 
 public class Polymorphism {
     //two types: overloading and overriding
-    //function name same but different purpose
-    
+    //Method Over Loading 
+    //same name of function name and different number of arguments or datatypes 
     void add(int a,int b){
         System.out.println(a+b);
     }
@@ -17,4 +17,21 @@ public class Polymorphism {
         obj.add(10,20,30);
     }
     
+}
+
+//Method Over Riding
+//this properties come into play when inheritance comes first.
+//Function Body()
+
+class Bank1 {
+    
+    void rateOfIntrest(){
+        System.out.println("Class Bank1 Method....");
+        } 
+}
+class Bank2 extends Bank1 {
+    
+    void rateOfIntrest(){
+        System.out.println("bAnk2 class Method.");
+    } 
 }
